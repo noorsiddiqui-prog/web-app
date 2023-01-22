@@ -10,6 +10,7 @@ import Login from './components/Login/Login';
 import UserSignup from './Pages/User/UserSignup';
 import UserLogin from './Pages/User/UserLogin';
 import AllUsers from './Pages/AdminDashboard/AllUsers';
+import Second_Map from './Pages/AdminDashboard/Second_Map/index';
 
 
 
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<AdminDashboard/>} />
         <Route exact path='/alluser' element={<AllUsers/>} />
+        <Route exact path='/map' element={<Second_Map/>} />
         {/* <Route  path='/user' element={<User/>} /> */}
         <Route  path='/signup' element={<UserSignup/>} />
         <Route  path='/login' element={<UserLogin/>} />

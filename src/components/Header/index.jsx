@@ -117,10 +117,17 @@ export default function Header({
             {hasSearchBar && (
               
               <Box mr="70px" sx={{display: "flex"}}>
-                <Box mr="20px">
+                <Box mr="10px" sx={{display: "flex"}}>
+                  <Box mr="10px">
+                  <Button onClick={() => navigate('/map')} variant="contained" color="secondary">
+                    Another Map
+                  </Button>
+                  </Box>
+                  <Box>
                   <Button onClick={() => navigate('/alluser')} variant="contained" color="secondary">
                     All Users
                   </Button>
+                  </Box>
                 </Box>
                 <Box>
                   <Search>
